@@ -1,6 +1,6 @@
 function Contact(){
     return(
-        <h1>This is Contact page.</h1>
+        <h1>Sorry, Under construction :(</h1>
     )
 }
 
