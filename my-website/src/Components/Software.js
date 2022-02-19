@@ -5,7 +5,10 @@ function Software(){
     return(
         <>
         <h1>Software Repository</h1>
+        <div className='table-container'>
+
        <EnhancedTable />
+       </div>
         </>
     )
 }

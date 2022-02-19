@@ -21,6 +21,8 @@ import Switch from '@mui/material/Switch';
 // import DeleteIcon from '@mui/icons-material/Delete';
 // import FilterListIcon from '@mui/icons-material/FilterList';
 import { visuallyHidden } from '@mui/utils';
+import { Link } from '@mui/material';
+
 
 function createData(title,description,language,createDate) {
   return {
@@ -279,6 +281,7 @@ export default function EnhancedTable() {
               rowCount={rows.length}
             />
             <TableBody>
+              
               {/* if you don't need to support IE11, you can replace the `stableSort` call with:
                  rows.slice().sort(getComparator(order, orderBy)) */}
               {stableSort(rows, getComparator(order, orderBy))
@@ -286,16 +289,34 @@ export default function EnhancedTable() {
                 .map((row, index) => {
                   // const isItemSelected = isSelected(row.title);
                   // const labelId = `enhanced-table-checkbox-${index}`;
-
+                  let link=' ';
+                  switch (row.title) {
+                    case 'startup':
+                      link='https://github.com/Sahhimanshu7/startup';
+                      break;
+                    case 'neighbourCountryData':
+                      link='https://github.com/Sahhimanshu7/neighbourCountryData';
+                      break;
+                    case 'Registrationsystem':
+                      link='https://github.com/Sahhimanshu7/registrationsystem';
+                      break;
+                    case 'Movies-List':
+                      link='https://github.com/Sahhimanshu7/my-app';
+                      break;
+                    case 'ChatApp':
+                      link='https://github.com/Sahhimanshu7/chatApp';
+                      break;
+                  }
                   return (
                     // 
                     <TableRow>
-                      <TableCell align='center'>{row.title}</TableCell>
+                      <a href={`${link}`} target='_blank'> <TableCell align='center'>{row.title}</TableCell></a>
                       <TableCell align="center">{row.description}</TableCell>
                       <TableCell align="center">{row.language}</TableCell>
                       <TableCell align="center">{row.createDate}</TableCell>
                       
                     </TableRow>
+                   
                   );
                 })}
               {emptyRows > 0 && (
@@ -321,6 +342,7 @@ export default function EnhancedTable() {
         />
       </Paper>
       <FormControlLabel
+        className='dense-wrapper'
         control={<Switch checked={dense} onChange={handleChangeDense} />}
         label="Dense padding"
       />

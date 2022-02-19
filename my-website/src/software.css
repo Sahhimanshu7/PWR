@@ -1,3 +1,13 @@
 h1{
-    color: red;
+    color: #FFFBFB;
+    padding: 2% 3%;
+}
+.table-container{
+    padding:2%;
+}
+.dense-wrapper{
+    color: #FFFBFB;
+}
+a{
+    text-decoration: none;
 }
