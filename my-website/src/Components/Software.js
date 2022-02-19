@@ -1,4 +1,5 @@
 import EnhancedTable from './Table'
+import '../software.css'
 
 function Software(){
     return(
