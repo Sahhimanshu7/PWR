@@ -1,4 +1,4 @@
-import EnhancedTable from './Table'
+import EnhancedTable from '../Components/Table'
 import '../software.css'
 
 

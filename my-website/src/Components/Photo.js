@@ -1,4 +1,4 @@
-let PPhoto =  require('./profilePhoto.jpeg');
+let PPhoto =  require('../Images/pp.jpeg');
 
 function Photo(){
     return <img src={PPhoto} alt="profile" className='Main-Photo'/>;

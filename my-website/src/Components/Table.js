@@ -35,10 +35,14 @@ function createData(title,description,language,createDate) {
 
 const rows = [
   createData('Movies-List', 'Create or delete the name of your favourite movies', 'JavaScript', '2022-01-05'),
-  createData('ChatApp', 'Chat with anyone on the web', 'JavaScript', '2022-01-25'),
+  createData('ChatApp', 'Chat with anyone on the web', 'JavaScript', '2023-01-25'),
+  createData('E-commerce',' An e-commerce website to buy and sell products with admin dashboard', 'MERN', '2023-09-25'),
+  createData('Multi tunes Nepal', 'E-commerce site', 'MERN', '2022-06-22'),
+  createData('linkedIn clone', 'A linkedIn clone website', 'React/Node/Express/MongoDB','2023-10-2'),
   createData('Registrationsystem', 'Register new users', 'C++','2021-12-24'),
   createData('neighbourCountryData', 'Get the data of your neighbour Country', 'JavaScript', '2021-12-07'),
-  createData('startup', 'A general Website', 'HTML5/CSS3', '2020-07-188'),
+  createData('startup', 'A general Website', 'HTML5/CSS3', '2020-07-18'),
+  createData('tesla-clone-website','A clone frontend website of tesla.com','ReactJS', '2022-03-22'),
 ];
 
 function descendingComparator(a, b, orderBy) {
@@ -305,6 +309,21 @@ export default function EnhancedTable() {
                       break;
                     case 'ChatApp':
                       link='https://github.com/Sahhimanshu7/chatApp';
+                      break;
+                    case 'E-commerce':
+                      link='https://github.com/Sahhimanshu7/E-commerce';
+                      break;
+                    case 'Multi tunes Nepal':
+                      link='https://github.com/Sahhimanshu7/Ashwin-website';
+                      break;
+                    case 'linkedIn clone':
+                      link = 'https://github.com/Sahhimanshu7/linkedIn-clone';
+                      break;
+                    case 'tesla-clone-website':
+                      link='https://github.com/Sahhimanshu7/tesla-clone-website';
+                      break;
+                    default:
+                      link="/";
                       break;
                   }
                   return (

@@ -54,7 +54,7 @@ code {
   font-size: 1.1rem;
 
   color: #FFFBFB;
-  padding: 5% 5%;
+  padding: 3% 6%;
 }
 
 .intro{
@@ -72,7 +72,7 @@ code {
   display: flex;
   justify-content: left;
   align-items: center;
-  margin: 4% 8%;
+  margin: 4% 6%;
 }
 .fb{
   padding: 0% 2%;
@@ -117,10 +117,15 @@ code {
   font-size: large;
 }
 
-.footer-content{
+.footer{
+  position: fixed;
+  top: 80vh;
   margin: 5% 8% 0% 8%;
+  width: 100%;
 }
-
+.footer-content-left{
+  margin: 0% 8%;
+}
 .footer-content-left button{
   text-decoration: none;
   font-size: 0.8rem;
@@ -128,7 +133,7 @@ code {
 
   border: 0px solid #000000;
   border-radius: 10px;
-  padding: 0.5% 2%;
+  padding: 0.5% 1%;
   background-color: #2F69BF;
 }
 
@@ -146,4 +151,6 @@ code {
 
   color: #C5C6C7;
   margin: 4% 0% 0% 40%;
+
+  display: flex;
 }
