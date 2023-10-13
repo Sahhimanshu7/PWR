@@ -1,10 +1,20 @@
-import React, { useState, useEffect } from "react";
 import Typewriter from 'typewriter-effect';
+import SecondBlock from './SecondBlock';
+import ThirdBlock from './ThirdBlock';
+import { useState } from 'react';
+
 function FirstBlock(){
-    
-    
+    const [firstDisplay, setFirstDisplay] = useState('inhert');
+    const [secondDisplay, setSecondDisplay] = useState('none');
+    const [thirdDisplay, setThirdDisplay] = useState('none');
     return(
-        <div className="first-block">
+        <>
+        <div className="first-block" style={{display:firstDisplay}}>
+            <div className="progress-bar">
+                <div className="first-page"></div>
+                <div className="second-page"></div>
+                <div className="third-page"></div>
+            </div>
             <div className="first-block-heading">
                 <h1>
                 <Typewriter
@@ -31,8 +41,27 @@ function FirstBlock(){
                 structures and algorithms, and system programming.
                 </p>
             </div>
+            <div className="know-more">
+                <p>Know more</p>
+                <button className="know-more-button" onClick={()=> {
+                    setFirstDisplay('none');
+                    setSecondDisplay('block')
+                }}>
+                <div class="arrow">
+                    <div class="arrow-top"></div>
+                    <div class="arrow-bottom"></div>
+                </div>
+                </button>
+            </div>
             
         </div>
+        <div className='second-block' style={{display:secondDisplay}}>
+            <SecondBlock />
+        </div>
+        <div className='third-block' style={{display:thirdDisplay}}>
+            <ThirdBlock />
+        </div>
+        </>
     )
 }
 
