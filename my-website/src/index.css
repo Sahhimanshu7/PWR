@@ -9,6 +9,11 @@ body {
   background-color: #0B0C10;
 }
 
+html{
+  /* scroll-behavior: smooth; */
+  overflow-y: scroll;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -56,6 +61,7 @@ code {
   color: #FFFBFB;
   padding: 3% 6%;
 }
+
 
 .intro{
   width:90%;
@@ -309,4 +315,10 @@ code {
 .third-page{
   background-color: #666;
   height: 8vh;
+}
+
+.for-scroll{
+  width: 100vw;
+  height: 22vh;
+  margin: 500px;
 }

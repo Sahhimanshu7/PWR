@@ -3,10 +3,18 @@ import Intro from "./Intro";
 import Social from "./Social";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
+// import { useEffect } from "react";
 
-function Logo(){
+function Logo(){  
+    // useEffect(()=>{
+        window.addEventListener('scroll', (event)=>{
+            window.scrollTo(0,1000);
+            window.location.href ='/about';
+        })
+    // })
     return (
         <>
+        <div className="home">
         <Photo />
         <div className="logo">
             <h1>Himanshu Sah</h1>
@@ -18,7 +26,10 @@ function Logo(){
                 <button>About</button>
             </Link>
         </div>
-        <Footer/>
+        <Footer/>        
+        </div>
+        <div className="for-scroll">
+        </div>
         </>
     )
 }

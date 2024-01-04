@@ -1,12 +1,12 @@
 import Typewriter from 'typewriter-effect';
 import SecondBlock from './SecondBlock';
-import ThirdBlock from './ThirdBlock';
+// import ThirdBlock from './ThirdBlock';
 import { useState } from 'react';
 
 function FirstBlock(){
     const [firstDisplay, setFirstDisplay] = useState('inhert');
     const [secondDisplay, setSecondDisplay] = useState('none');
-    const [thirdDisplay, setThirdDisplay] = useState('none');
+    // const [thirdDisplay, setThirdDisplay] = useState('none');
     return(
         <>
         <div className="first-block" style={{display:firstDisplay}}>
@@ -58,9 +58,9 @@ function FirstBlock(){
         <div className='second-block' style={{display:secondDisplay}}>
             <SecondBlock />
         </div>
-        <div className='third-block' style={{display:thirdDisplay}}>
+        {/* <div className='third-block' style={{display:thirdDisplay}}>
             <ThirdBlock />
-        </div>
+        </div> */}
         </>
     )
 }

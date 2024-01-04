@@ -328,7 +328,7 @@ export default function EnhancedTable() {
                   return (
                     // 
                     <TableRow>
-                      <a href={`${link}`} target='_blank'> <TableCell align='center'>{row.title}</TableCell></a>
+                      <a href={`${link}`}> <TableCell align='center'>{row.title}</TableCell></a>
                       <TableCell align="center">{row.description}</TableCell>
                       <TableCell align="center">{row.language}</TableCell>
                       <TableCell align="center">{row.createDate}</TableCell>

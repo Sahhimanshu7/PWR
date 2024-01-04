@@ -3,6 +3,9 @@ import FirstBlock from "./About-components/FirstBlock";
 
 
 function About(){
+    window.addEventListener('scroll', (event) =>{
+            window.location.href = '/';
+    })
     return(
         <div className="about">
             <FirstBlock /> 
