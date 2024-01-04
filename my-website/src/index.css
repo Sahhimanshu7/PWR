@@ -153,6 +153,7 @@ code {
   font-size: 0.5rem;
 
   color: #C5C6C7;
+<<<<<<< HEAD
 
   display: flex;
 }
@@ -309,4 +310,8 @@ code {
 .third-page{
   background-color: #666;
   height: 8vh;
+=======
+  margin: 4% 0% 0% 40%;
+  padding-bottom: 3px;
+>>>>>>> d7ca48e (Changes to the structure and about added)
 }
