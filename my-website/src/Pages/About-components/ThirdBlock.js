@@ -14,7 +14,7 @@ function ThirdBlock(){
                 <p>Some of my favourite books are : </p>
                 <ul>
                     <li>Meditations by Marcus Aurelius.</li>
-                    <li></li>
+                    <li>Mastery by Robert Greene.</li>
                 </ul>
                 <p>I enjoy playing Cricket(started playing since 10 years old), Chess, and
                     going to the Gym.
