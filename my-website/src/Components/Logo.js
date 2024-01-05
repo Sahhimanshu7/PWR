@@ -3,15 +3,12 @@ import Intro from "./Intro";
 import Social from "./Social";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
-// import { useEffect } from "react";
 
 function Logo(){  
-    // useEffect(()=>{
-        window.addEventListener('scroll', (event)=>{
-            window.scrollTo(0,1000);
-            window.location.href ='/about';
-        })
-    // })
+    window.addEventListener('scroll', (event)=>{
+        window.scrollTo(0,1000);
+        window.location.href ='/about';
+    })
     return (
         <>
         <div className="home">

@@ -40,9 +40,9 @@ code {
 
 
 .Main-Photo{
-  width: 437px;
-  height: 480px;
-  opacity: 0.8;
+  width: 430px;
+  height: 430px;
+  opacity: 0.9;
   border: 1px solid #000000;
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -50,6 +50,7 @@ code {
 
   position: absolute;
   right: 10%;
+
 }
 
 .logo{
@@ -163,6 +164,7 @@ code {
   display: flex;
 }
 
+/* about starts here  */
 .about{
   display: flex;
   flex-direction: column;
@@ -315,6 +317,148 @@ code {
 .third-page{
   background-color: #666;
   height: 8vh;
+}
+
+/* second-block */
+
+.first-page-second{
+  background-color: #666;
+  height: 8vh;
+  margin-bottom: 4px;
+}
+.second-page-second{
+  background-color: #fff;
+  height: 8vh;
+  margin-bottom: 4px;
+
+}
+.third-page-second{
+  background-color: #666;
+  height: 8vh;
+}
+
+.second-block{
+  height: 60vh;
+  margin-bottom: 5px;
+  width: 75vw;
+  overflow-y: scroll;
+
+  background-color: #C5C6C7;
+  padding: 10px 20px;
+  border-radius: 20px;
+
+  animation-name: firstBlock;
+  animation-duration: 1s;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-section a button{
+  border-radius: 20px;
+  padding: 10px 15px;
+  border: 1px solid #1877f2;
+  background-color: #1877f2;
+  color: #FFFBFB;
+  font-size: 24px;
+}
+
+.skills-section{
+  align-self: center;
+}
+
+.skills-list h2{
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+  color: rgb(86, 86, 86);
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.line{
+  margin: 5px 0px;
+  width: 70vw;
+  height: 1px;
+  background-color: black;
+}
+
+.tech-stack{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  height: 40vh;
+}
+
+.stacks{
+  display: flex;
+  justify-content: space-around;
+
+  /* max-width: 50vw; */
+  padding: 0px 60px;
+}
+
+.stacks p{
+  font-size: 18px;
+  padding: 5px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.stack-1{
+  border: 1px solid rgb(155, 153, 153);
+  padding: 20px;
+  border-radius: 20px;
+  min-width: 180px;
+  box-shadow: 3px 5px grey;
+}
+
+.stack-2{
+  border: 1px solid rgb(155, 153, 153);
+  padding: 20px;
+  border-radius: 20px;
+  min-width: 180px;
+  box-shadow: 3px 5px grey;
+}
+.stack-3{
+  border: 1px solid rgb(155, 153, 153);
+  padding: 20px;
+  border-radius: 20px;
+  min-width: 180px;
+  box-shadow: 3px 5px grey;
+}
+/* third block  */
+
+.first-page-third{
+  background-color: #666;
+  height: 8vh;
+  margin-bottom: 4px;
+}
+.second-page-third{
+  background-color: #666;
+  height: 8vh;
+  margin-bottom: 4px;
+}
+.third-page-third{
+  background-color: #fff;
+  height: 8vh;
+}
+
+.third-block{
+  animation-name: firstBlock;
+  animation-duration: 1s;
+}
+.back-to-top button{
+  margin: 0px 20px;
+  padding: 0;
+  background-color: #000000;
+  border: none;
+
+  font-size: 18px;
+  cursor: pointer;
+  color: #FFFBFB;
+  text-decoration: underline;
 }
 
 .for-scroll{
