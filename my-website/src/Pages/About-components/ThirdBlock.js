@@ -16,7 +16,7 @@ function ThirdBlock(){
                     <li>Meditations by Marcus Aurelius.</li>
                     <li>Mastery by Robert Greene.</li>
                 </ul>
-                <p>I enjoy playing Cricket(started playing since 10 years old), Chess, and
+                <p>I enjoy playing Cricket (started playing since 10 years old), Chess, and
                     going to the Gym.
                 </p>
             </div>

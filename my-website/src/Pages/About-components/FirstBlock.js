@@ -1,8 +1,9 @@
 import Typewriter from 'typewriter-effect';
-import SecondBlock from './SecondBlock';
-import ThirdBlock from './ThirdBlock';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+
+import SecondBlock from './SecondBlock';
+import ThirdBlock from './ThirdBlock';
 
 function FirstBlock(){
     const [firstDisplay, setFirstDisplay] = useState('inhert');

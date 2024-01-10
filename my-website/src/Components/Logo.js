@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import { Link } from "react-router-dom";
 
 function Logo(){  
+    // Once the user scrolls the even comes into place and redirects the user to the about section 
     window.addEventListener('scroll', (event)=>{
         window.scrollTo(0,1000);
         window.location.href ='/about';
@@ -25,6 +26,7 @@ function Logo(){
         </div>
         <Footer/>        
         </div>
+        
         <div className="for-scroll">
         </div>
         </>

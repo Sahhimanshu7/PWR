@@ -1,7 +1,6 @@
 import Footer from "../Components/Footer";
 import FirstBlock from "./About-components/FirstBlock";
 
-
 function About(){
     return(
         <div className="about">
