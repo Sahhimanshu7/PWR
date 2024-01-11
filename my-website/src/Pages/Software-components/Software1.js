@@ -1,8 +1,11 @@
 import '../../software.css';
+import GitAuto from './GitAuto';
 
 const Software1 = () =>{
     return(
-        <p>Hello</p>
+        <p>Hello
+            <GitAuto />
+        </p>
     )
 }
 
