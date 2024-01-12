@@ -29,7 +29,7 @@ const GitAuto = () =>{
         fetchData();
     })
     return (
-        <EnhancedTable />
+        <EnhancedTable list={reposList}/>
     )
 }
 

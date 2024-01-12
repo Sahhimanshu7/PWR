@@ -18,26 +18,27 @@ import Switch from '@mui/material/Switch';
 import { visuallyHidden } from '@mui/utils';
 
 
-function createData(title,description,language,createDate) {
+function createData(title,description,language,createDate,link) {
   return {
     title,
     description,
     language,
     createDate,
+    link,
   };
 }
 
-const rows = [
-  createData('Movies-List', 'Create or delete the name of your favourite movies', 'JavaScript', '2022-01-05'),
-  createData('ChatApp', 'Chat with anyone on the web', 'JavaScript', '2023-01-25'),
-  createData('E-commerce',' An e-commerce website to buy and sell products with admin dashboard', 'MERN', '2023-09-25'),
-  createData('Multi tunes Nepal', 'E-commerce site', 'MERN', '2022-06-22'),
-  createData('linkedIn clone', 'A linkedIn clone website', 'React/Node/Express/MongoDB','2023-10-2'),
-  createData('Registrationsystem', 'Register new users', 'C++','2021-12-24'),
-  createData('neighbourCountryData', 'Get the data of your neighbour Country', 'JavaScript', '2021-12-07'),
-  createData('startup', 'A general Website', 'HTML5/CSS3', '2020-07-18'),
-  createData('tesla-clone-website','A clone frontend website of tesla.com','ReactJS', '2022-03-22'),
-];
+// const rows = [
+//   createData('Movies-List', 'Create or delete the name of your favourite movies', 'JavaScript', '2022-01-05'),
+//   createData('ChatApp', 'Chat with anyone on the web', 'JavaScript', '2023-01-25'),
+//   createData('E-commerce',' An e-commerce website to buy and sell products with admin dashboard', 'MERN', '2023-09-25'),
+//   createData('Multi tunes Nepal', 'E-commerce site', 'MERN', '2022-06-22'),
+//   createData('linkedIn clone', 'A linkedIn clone website', 'React/Node/Express/MongoDB','2023-10-2'),
+//   createData('Registrationsystem', 'Register new users', 'C++','2021-12-24'),
+//   createData('neighbourCountryData', 'Get the data of your neighbour Country', 'JavaScript', '2021-12-07'),
+//   createData('startup', 'A general Website', 'HTML5/CSS3', '2020-07-18'),
+//   createData('tesla-clone-website','A clone frontend website of tesla.com','ReactJS', '2022-03-22'),
+// ];
 
 function descendingComparator(a, b, orderBy) {
   if (b[orderBy] < a[orderBy]) {
@@ -102,7 +103,6 @@ function EnhancedTableHead(props) {
   const createSortHandler = (property) => (event) => {
     onRequestSort(event, property);
   };
-
   return (
     <TableHead>
       <TableRow>
@@ -184,12 +184,18 @@ EnhancedTableToolbar.propTypes = {
   numSelected: PropTypes.number.isRequired,
 };
 
-export default function EnhancedTable() {
+export default function EnhancedTable({list}) {
   const [order, setOrder] = React.useState('asc');
   const [orderBy, setOrderBy] = React.useState('createDate');
   const [page, setPage] = React.useState(0);
   const [dense, setDense] = React.useState(false);
   const [rowsPerPage, setRowsPerPage] = React.useState(5);
+
+  const rows = list.map((listItem)=>{
+    return(
+      createData(listItem.name, listItem.description, listItem.language, listItem.created_at, listItem.clone_url)
+    )
+  })
 
   const handleRequestSort = (event, property) => {
     const isAsc = orderBy === property && order === 'asc';
@@ -241,47 +247,13 @@ export default function EnhancedTable() {
                 .map((row, index) => {
                   // const isItemSelected = isSelected(row.title);
                   // const labelId = `enhanced-table-checkbox-${index}`;
-                  let link=' ';
-                  switch (row.title) {
-                    case 'startup':
-                      link='https://github.com/Sahhimanshu7/startup';
-                      break;
-                    case 'neighbourCountryData':
-                      link='https://github.com/Sahhimanshu7/neighbourCountryData';
-                      break;
-                    case 'Registrationsystem':
-                      link='https://github.com/Sahhimanshu7/registrationsystem';
-                      break;
-                    case 'Movies-List':
-                      link='https://github.com/Sahhimanshu7/my-app';
-                      break;
-                    case 'ChatApp':
-                      link='https://github.com/Sahhimanshu7/chatApp';
-                      break;
-                    case 'E-commerce':
-                      link='https://github.com/Sahhimanshu7/E-commerce';
-                      break;
-                    case 'Multi tunes Nepal':
-                      link='https://github.com/Sahhimanshu7/Ashwin-website';
-                      break;
-                    case 'linkedIn clone':
-                      link = 'https://github.com/Sahhimanshu7/linkedIn-clone';
-                      break;
-                    case 'tesla-clone-website':
-                      link='https://github.com/Sahhimanshu7/tesla-clone-website';
-                      break;
-                    default:
-                      link="/";
-                      break;
-                  }
                   return (
                     // 
                     <TableRow>
-                      <a href={`${link}`}> <TableCell align='center'>{row.title}</TableCell></a>
+                      <a href={`${row.link}`}> <TableCell align='center'>{row.title}</TableCell></a>
                       <TableCell align="center">{row.description}</TableCell>
                       <TableCell align="center">{row.language}</TableCell>
-                      <TableCell align="center">{row.createDate}</TableCell>
-                      
+                      <TableCell align="center">{row.createDate}</TableCell>  
                     </TableRow>
                    
                   );
