@@ -1,0 +1,40 @@
+.header{
+  display: flex;
+  margin-left: 30%;
+  justify-content: space-between;
+}
+
+.header-items{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-top: 20px;
+  list-style: none;
+
+  background-color: #f5f5f5;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.header-item button {
+  background-color: whitesmoke;
+  border: none;
+}
+
+.header-item button a{
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.theme{
+  margin-right: 30px;
+  margin-top: 10px;
+}
+.theme-selector{
+  background-color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 20px;
+}
