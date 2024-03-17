@@ -11,6 +11,20 @@ function Header() {
   const [backgroundcolor, setBackgroundColor] = useState("#f5f5f5");
   const [color, setColor] = useState("black");
 
+  const [visible, setVisible] = useState("none");
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      const scrollY = window.scrollY;
+
+      if (scrollY > window.innerHeight){
+        setVisible("flex");
+      } else {
+        setVisible("none");
+      }
+    })
+  })
+
   useEffect(()=> {
     if (currentTheme == "Dark") {
       setBackgroundColor("#323232");
@@ -22,8 +36,8 @@ function Header() {
   }, [currentTheme]);
 
   return (
-    <div className= "header" >
-      <ul className='header-items' style={{ backgroundColor: backgroundcolor, color: color }}>
+    <div className= "header">
+      <ul className='header-items' style={{ backgroundColor: backgroundcolor, color: color, display: visible }}>
         <li className='header-item'>
           <button style={{ backgroundColor: backgroundcolor, color: color }}>
             <a href='#home' style={{ backgroundColor: backgroundcolor, color: color }}>Home</a>

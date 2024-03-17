@@ -2,6 +2,10 @@
   display: flex;
   margin-left: 30%;
   justify-content: space-between;
+
+  position: fixed;
+  top: 0px;
+  width: 71%;
 }
 
 .header-items{
@@ -31,6 +35,9 @@
 .theme{
   margin-right: 30px;
   margin-top: 10px;
+
+  position: absolute;
+  right: 10px;
 }
 .theme-selector{
   background-color: white;
