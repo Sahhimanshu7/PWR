@@ -3,6 +3,7 @@ import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import { useTheme } from '../../contexts/ThemeContext';
 
+
 import "../../assets/layouts/header.css";
 
 function Header() {
@@ -17,7 +18,7 @@ function Header() {
     window.addEventListener("scroll", () => {
       const scrollY = window.scrollY;
 
-      if (scrollY > window.innerHeight){
+      if (scrollY > window.innerHeight / 1.4){
         setVisible("flex");
       } else {
         setVisible("none");

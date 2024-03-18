@@ -6,6 +6,7 @@
   position: fixed;
   top: 0px;
   width: 71%;
+  z-index: 5;
 }
 
 .header-items{
@@ -38,6 +39,7 @@
 
   position: absolute;
   right: 10px;
+  z-index: 5;
 }
 .theme-selector{
   background-color: white;

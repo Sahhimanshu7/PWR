@@ -1,0 +1,61 @@
+.social {
+  display: flex;
+  width: 20vw;
+  justify-content: space-around;
+  align-items: center;
+  margin: 60px 6%;
+}
+
+.fb {
+  padding: 0% 2%;
+}
+
+.fb a {
+  color: #1877f2
+}
+
+.insta {
+  padding: 0% 2%;
+}
+
+.insta a {
+  color: #833AB4;
+}
+
+.tw {
+  padding: 0% 2%;
+}
+
+.tw a {
+  color: #1da1f2;
+}
+
+.git {
+  padding: 0% 2%;
+}
+
+.git a {
+  color: #C5C6C7;
+}
+
+.in {
+  padding: 0% 2%;
+}
+
+.in a {
+  color: #006192;
+}
+
+.mail {
+  padding: 0% 2%;
+}
+
+.mail a {
+  color: #C5C6C7;
+}
+
+.social a {
+  text-decoration: none;
+  text-shadow: #C5C6C7;
+  font-size: large;
+}

@@ -1,10 +1,13 @@
 import React from 'react'
 
 import "../../assets/home/main.css";
+import Intro from './Intro';
 
 function Main() {
   return (
-    <div className='main' id='home'>Main</div>
+    <div className='main' id='home'>
+      <Intro />
+    </div>
   )
 }
 
