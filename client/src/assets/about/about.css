@@ -50,5 +50,75 @@
   line-height: 2em;
 }
 .left-side h1{
-  
+  font-size: 40px;
+  color: white;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.left-side p{
+  color: whitesmoke;
+  width: 90%;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+.download-resume{
+  padding: 10px 15px;
+  background-color: #1877f2;
+  border: none;
+  border-radius: 20px;
+  box-shadow: #833AB4;
+  cursor: pointer;
+}
+.download-resume a{
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+.right-side{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line{
+  height: 1px;
+  width: 280px;
+  border: 0.5px solid white;
+  margin: 20px 0;
+}
+
+.skills-list h2{
+  color: white;
+  font-size: 34px;
+}
+
+.stack-1{
+  width: 120%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  margin: 10px 0;
+}
+
+.stack-2{
+  width: 120%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  margin: 10px 0;
+}
+
+.stack-3{
+  width: 120%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  margin: 10px 0;
 }

@@ -21,29 +21,29 @@ function About() {
         <div className="left-side">
           <h1>About Me 👨‍💻 </h1>
           <p className="paragraph">
-            My name is Himanshu Sah, and I am a full-stack web
+            Hello! My name is Himanshu Sah, and I am a full-stack web
             developer. I have been working on and learning MERN
             for over two years.I am interested in software
             development and web development. Besides web development,
             I am also interested in Microprocesses, AI/ML, data
             structures and algorithms, and system programming.
           </p>
-        </div>
-
-        <div className="right-side">
           <button className="download-resume">
             <a href="../../../public/himanshu-sah-resume.docx"> Download My Resume </a>
           </button>
+        </div>
+
+        <div className="right-side">
           <div className="skills-list">
             <h2>
               💻
-              My Tech-Stack -
+              My Tech-Stack
             </h2>
             <div className='line'></div>
             <div className="tech-stack">
               <div className='stacks'>
               <div className='stack-1'>
-
+                🌐
                   <p>JavaScript</p>
                   <p>TypeScript</p>
                   <p>ReactJs</p>
