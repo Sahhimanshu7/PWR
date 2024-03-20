@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from 'react';
 
 import { useTheme } from "../../contexts/ThemeContext";
@@ -8,15 +9,15 @@ function Intro() {
   const { currentTheme } = useTheme();
 
   const [lightClass, setLightClass] = useState("light-effect");
-  const [pclass, setPClass] = useState("second-p");
+  const [pclass, setPclass] = useState("second-p");
 
   useEffect(() => {
-    if(currentTheme == "Dark"){
+    if(currentTheme === "Dark"){
       setLightClass("dark-light");
-      setPClass("second-p-dark");
+      setPclass("second-p-dark");
     } else {
       setLightClass("light-effect");
-      setPClass("second-p")
+      setPclass("second-p")
     }
   }, [currentTheme])
   return (
@@ -37,8 +38,8 @@ function Intro() {
         <Social />
       </div>
       
-      <div class="profile-container">
-        <img src="../../../public/Images/pp.jpeg" alt="Profile Picture" class="profile-picture" />
+      <div className="profile-container">
+        <img src="../../../public/Images/pp.jpeg" alt="Profile Picture" className="profile-picture" />
       </div>
     </div>
   )
