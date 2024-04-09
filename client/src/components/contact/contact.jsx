@@ -9,10 +9,28 @@ import { useTheme } from "../../contexts/ThemeContext";
 import "../../assets/contact/contact.css";
 
 function ContactForm() {
+  const { currentTheme } = useTheme();
   const [state, handleSubmit] = useForm("mzbnkryv");
   if (state.succeeded) {
       return <p>Thanks for joining!</p>;
   }
+
+  const [nameL, setNameL] = useState('name-l');
+  const [emailL, setEmailL] = useState('email-l');
+  const [textL, setTextL] = useState("text-l");
+
+  useEffect(() => {
+    if(currentTheme === "Dark"){
+    setNameL("name-d");
+    setEmailL("email-d");
+    setTextL("text-d");
+    } else {
+    setNameL("name-l");
+    setEmailL("email-l");
+    setTextL("text-l");
+    }
+    }, [currentTheme])
+
   return (
       <form onSubmit={handleSubmit} className='form-light'>
         <input 
@@ -20,14 +38,14 @@ function ContactForm() {
         type='text'
         name='name'
         placeholder='Your Name'
-        className='name-l'
+        className={nameL}
         />
       <input
         id="email"
         type="email" 
         name="email"
         placeholder='Your Email'
-        className='email-l'
+        className={emailL}
       />
       <ValidationError 
         prefix="Email" 
@@ -37,7 +55,7 @@ function ContactForm() {
       <textarea
         id="message"
         name="message"
-        className='text-l'
+        className={textL}
         placeholder='Your Message...'
       />
       <ValidationError 
@@ -59,13 +77,17 @@ function Contact () {
     const [lightClassContact, setLightClassContact] = useState("light-effect-contact");
     const [pclassContact, setPclassContact] = useState("p-light");
 
+    const [cp, setCp] = useState('c-p-l');
+
     useEffect(() => {
         if(currentTheme === "Dark"){
         setLightClassContact("dark-light-contact");
         setPclassContact("p-dark");
+        setCp("c-p-d");
         } else {
         setLightClassContact("light-effect-contact");
         setPclassContact("p-light");
+        setCp("c-p-l");
         }
     }, [currentTheme])
 
@@ -74,7 +96,7 @@ function Contact () {
             <div className='top'>
                 <div className='head'>
                 <h1 className={pclassContact}>Contact Me</h1>
-                <p className='c-p-l'>Feel free to Contact me by sending me a message and I will get back to you as soon as possible
+                <p className={cp}>Feel free to Contact me by sending me a message and I will get back to you as soon as possible
                 </p>
                 </div>
                 
@@ -89,9 +111,12 @@ function Contact () {
             <div className='footer'>
                 <div className='footer-middle'>
                     <h1 className='name-h'>Himanshu Sah</h1>
-                    <p className='name-p'></p>
+                    <p className='name-p'>Thanks for visiting my site. It was developed with the purpose of meeting people with similar interests.
+                    Please Let me know if you have any suggestions regarding my personal website.
+                    </p>    
                 </div>
-                <p>Copyright @2024 | Himanshu Sah</p>
+                <Social />
+                <p className='copy'>Copyright @2024 | Himanshu Sah</p>
             </div>
 
         </div>

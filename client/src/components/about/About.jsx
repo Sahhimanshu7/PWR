@@ -21,16 +21,18 @@ function About() {
         <div className="left-side">
           <h1>About Me 👨‍💻 </h1>
           <p className="paragraph">
-            Hello! My name is Himanshu Sah, and I am a full-stack web
-            developer. I have been working on and learning MERN
-            for over two years.I am interested in software
-            development and web development. Besides web development,
-            I am also interested in Microprocesses, AI/ML, data
-            structures and algorithms, and system programming.
+            Hello there! I'm Himanshu, a passionate Full-Stack Developer and Computer Science student journeying through the realms of technology. With over two years of dedicated exploration and hands-on experience, I've immersed myself in the dynamic world of MERN (MongoDB, Express.js, React, Node.js) stack development, crafting robust and responsive web solutions.
+
+Driven by an insatiable curiosity for software development, my journey extends far beyond the confines of web development. From delving into the intricacies of Microprocesses to unraveling the mysteries of Artificial Intelligence and Machine Learning, I thrive on the challenge of mastering diverse domains within computer science.
+
+
+Whether it's architecting scalable web applications, fine-tuning algorithms for efficiency, or exploring the frontiers of emerging technologies, I'm always eager to push boundaries and exceed expectations.
+
+Join me on this exhilarating journey through the digital landscape, where innovation meets craftsmanship, and every line of code tells a story of ambition and ingenuity.
+
+Let's build the future together, one keystroke at a time.
           </p>
-          <button className="download-resume">
-            <a href="../../../public/himanshu-sah-resume.docx"> Download My Resume </a>
-          </button>
+          
         </div>
 
         <div className="right-side">
@@ -66,6 +68,9 @@ function About() {
                 </div>
               </div>
             </div>
+            <button className="download-resume">
+              <a href="/himanshu-sah-resume.docx"> Download My Resume </a>
+            </button>
           </div>
         </div>
 

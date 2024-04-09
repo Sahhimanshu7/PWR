@@ -39,7 +39,7 @@ function Intro() {
       </div>
       
       <div className="profile-container">
-        <img src="../../../public/Images/pp.jpeg" alt="Profile Picture" className="profile-picture" />
+        <img src="/Images/pp.jpeg" alt="Profile Picture" className="profile-picture" />
       </div>
     </div>
   )

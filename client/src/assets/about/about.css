@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #98aef5;
+  background-color: #384d90;
 }
 
 .about{
@@ -14,10 +14,9 @@
 
 .about-second{
   display: flex;
-  /*align-content: center;*/
-  justify-content: space-around;
-  /*align-items: center;*/
-  padding-top: 30vh;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10vh;
   height: 100vh;
   width: 80vw;
   animation: displayAbout 2s ease-in;
@@ -43,7 +42,7 @@
 }
 
 .left-side{
-  width: 50%;
+  width: 80vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,9 +57,10 @@
 
 .left-side p{
   color: whitesmoke;
-  width: 90%;
+  width: 100%;
   margin-bottom: 50px;
-  font-size: 20px;
+  font-size: 16px;
+  overflow-x: hidden;
 }
 
 .download-resume{
@@ -70,11 +70,16 @@
   border-radius: 20px;
   box-shadow: #833AB4;
   cursor: pointer;
+
+  margin-top: 7vh;
+  margin-left: 2lvw;
 }
 .download-resume a{
   text-decoration: none;
   font-size: 20px;
   color: white;
+
+  
 }
 
 .right-side{
@@ -102,7 +107,14 @@
   align-items: center;
   justify-content: space-evenly;
   color: white;
-  margin: 10px 0;
+  margin: 15px 0;
+}
+
+.stack-1 p{
+  border: 0.2px solid rgb(52, 50, 50);
+  padding: 3px 5px;
+  border-radius: 10px;
+  background-color: rgb(52, 50, 50);
 }
 
 .stack-2{
@@ -111,7 +123,14 @@
   align-items: center;
   justify-content: space-evenly;
   color: white;
-  margin: 10px 0;
+  margin: 15px 0;
+}
+
+.stack-2 p {
+  border: 0.2px solid rgb(52, 50, 50);
+  padding: 5px 8px;
+  border-radius: 10px;
+  background-color: rgb(52, 50, 50);
 }
 
 .stack-3{
@@ -121,4 +140,181 @@
   justify-content: space-evenly;
   color: white;
   margin: 10px 0;
+}
+
+.stack-3 p {
+  border: 0.2px solid rgb(52, 50, 50);
+  padding: 3px 5px;
+  border-radius: 10px;
+  background-color: rgb(52, 50, 50);
+}
+
+@media only screen and (max-width: 1100px) {
+
+.about-content-light {
+    height: 180vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #384d90;
+  }
+
+  .about {
+    display: none;
+  }
+
+
+  .about-second {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /*align-content: center;*/
+    /*align-items: center;*/
+    padding-top: 2vh;
+    height: 100vh;
+    width: 100vw;
+    animation: displayAbout 2s ease-in;
+  }
+
+  @keyframes displayAbout {
+    0% {
+      margin-top: 100px;
+      opacity: 0;
+    }
+
+    50% {
+      margin-top: 25px;
+      opacity: 0.5;
+    }
+
+    75% {
+      margin-top: 0;
+      opacity: 0.75;
+    }
+
+    100% {
+      margin-top: 0;
+      opacity: 1.0;
+    }
+  }
+
+  .left-side {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.4em;
+  }
+
+  .left-side h1 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .left-side p {
+    color: whitesmoke;
+    width: 100%;
+    margin-bottom: 50px;
+    font-size: 16px;
+    overflow-x: hidden;
+    width: 80vw;
+  }
+
+  .download-resume {
+    padding: 10px 15px;
+    background-color: #1877f2;
+    border: none;
+    border-radius: 20px;
+    box-shadow: #833AB4;
+    cursor: pointer;
+
+    margin-top: 7vh;
+    margin-left: 4vw;
+  }
+
+  .download-resume a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+
+
+  }
+
+  .right-side {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .line {
+    height: 1px;
+    width: 280px;
+    border: 0.5px solid white;
+    margin: 10px 0;
+  }
+
+  .skills-list h2 {
+    color: white;
+    font-size: 24px;
+  }
+
+  .stacks{
+    display: flex;
+    height: 30vh;
+  }
+
+  .stack-1 {
+    width: 120%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    margin: 10px 0;
+  }
+
+  .stack-1 p {
+    border: 0.2px solid rgb(52, 50, 50);
+    padding: 3px 5px;
+    border-radius: 10px;
+    background-color: rgb(52, 50, 50);
+  }
+
+  .stack-2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    margin: 15px 0;
+  }
+
+  .stack-2 p {
+    border: 0.2px solid rgb(52, 50, 50);
+    padding: 5px 8px;
+    border-radius: 10px;
+    background-color: rgb(52, 50, 50);
+  }
+
+  .stack-3 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    margin: 10px 0;
+  }
+
+  .stack-3 p {
+    border: 0.2px solid rgb(52, 50, 50);
+    padding: 3px 5px;
+    border-radius: 10px;
+    background-color: rgb(52, 50, 50);
+  }
 }

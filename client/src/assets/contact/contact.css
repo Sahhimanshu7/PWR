@@ -1,7 +1,7 @@
 .dark-light-contact{
     z-index: 1;
     width: 100vw;
-    padding-top: 15vh;
+    padding-top: 10vh;
     /* Make it wider than the viewport */
     height: 100vh;
     background: radial-gradient(rgba(0, 0, 0, 1) 0%, rgb(35, 30, 30) 100%);
@@ -14,7 +14,7 @@
 .light-effect-contact{
     z-index: 1;
     width: 100vw;
-    padding-top: 15vh;
+    padding-top: 10vh;
     /* Make it wider than the viewport */
     height: 100vh;
     background: radial-gradient(ellipse at top, rgba(93, 93, 93, 0.5) 0%, rgba(255, 255, 255, 0) 80%);
@@ -53,7 +53,6 @@
   font-weight: 800;
 
   font-size: 36px;
-  margin-bottom: 5vh;
 }
 
 .footer {
@@ -62,13 +61,35 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-color: black;
   color: #fff;
   font-size: 12px;
 }
-.footer p{
+
+.copy{
   opacity: 0.6;
   align-self: center;
+}
+
+.footer-middle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4vh;
+  width: 50vw;
+}
+
+.name-h{
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.name-p{
+  color: #fff;
+  opacity: 1.0;
+  font-size: 14px;
+  text-align: center;
 }
 
 .middle{
@@ -92,6 +113,17 @@
   outline: none;
 }
 
+.name-d {
+  font-size: 20px;
+  margin: 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  outline: none;
+  color: #fff;
+  background-color: black;
+  border: none;
+}
+
 .email-l{
   font-size: 20px;
   margin: 10px;
@@ -99,6 +131,19 @@
   border-radius: 10px;
   outline: none;
 }
+
+.email-d {
+  font-size: 20px;
+  margin: 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  outline: none;
+
+  color: #fff;
+  background-color: black;
+  border: none;
+}
+
 .text-l{
   font-size: 20px;
   margin: 10px;
@@ -106,6 +151,19 @@
   border-radius: 10px;
   height: 20vh;
   outline: none;
+}
+
+.text-d {
+  font-size: 20px;
+  margin: 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  height: 20vh;
+  outline: none;
+
+  color: #fff;
+  background-color: black;
+  border: none;
 }
 
 .c-s-l{
@@ -118,4 +176,224 @@
   color: #fff;
   width: 100px;
   align-self: center;
+
+  border: none;
+}
+
+.c-p-l{
+  margin-bottom: 10px ;
+  font-weight: 400;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.c-p-d{
+  margin-bottom: 10px;
+  font-weight: 400;
+  margin-top: 10px;
+  font-size: 20px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 1100px) {
+  .dark-light-contact {
+      z-index: 1;
+      width: 100vw;
+      padding-top: 5vh;
+      /* Make it wider than the viewport */
+      height: 100vh;
+      background: radial-gradient(rgba(0, 0, 0, 1) 0%, rgb(35, 30, 30) 100%);
+  
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .light-effect-contact {
+      z-index: 1;
+      width: 100vw;
+      padding-top: 5vh;
+      /* Make it wider than the viewport */
+      height: 100vh;
+      background: radial-gradient(ellipse at top, rgba(93, 93, 93, 0.5) 0%, rgba(255, 255, 255, 0) 80%);
+  
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .top {
+      /* width: 100vw; */
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+  
+    .head {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .c-p-l {
+      font-size: 16px;
+    }
+  
+    .p-dark {
+      font-family: cursive;
+      font-weight: 800;
+  
+      font-size: 24px;
+      color: #fff;
+    }
+  
+    .p-light {
+      font-family: cursive;
+      font-weight: 800;
+  
+      font-size: 24px;
+    }
+  
+    .footer {
+      width: 100vw;
+      padding: 10px 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+      color: #fff;
+      font-size: 12px;
+    }
+  
+    .copy {
+      opacity: 0.6;
+      align-self: center;
+    }
+  
+    .footer-middle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 4vh;
+      width: 70vw;
+    }
+  
+    .name-h {
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+  
+    .name-p {
+      color: #fff;
+      opacity: 1.0;
+      font-size: 14px;
+      text-align: center;
+    }
+  
+    .middle {
+      width: 100vw;
+      display: flex;
+      /* flex-direction: column; */
+      justify-content: center;
+    }
+  
+    .form-light {
+      display: flex;
+      flex-direction: column;
+      width: 60vw;
+    }
+  
+    .name-l {
+      font-size: 16px;
+      margin: 10px;
+      padding: 5px 10px;
+      border-radius: 10px;
+      outline: none;
+    }
+  
+    .name-d {
+      font-size: 16px;
+      margin: 10px;
+      padding: 5px 10px;
+      border-radius: 10px;
+      outline: none;
+      color: #fff;
+      background-color: black;
+      border: none;
+    }
+  
+    .email-l {
+      font-size: 16px;
+      margin: 10px;
+      padding: 5px 10px;
+      border-radius: 10px;
+      outline: none;
+    }
+  
+    .email-d {
+      font-size: 16px;
+      margin: 10px;
+      padding: 5px 10px;
+      border-radius: 10px;
+      outline: none;
+  
+      color: #fff;
+      background-color: black;
+      border: none;
+    }
+  
+    .text-l {
+      font-size: 16px;
+      margin: 10px;
+      padding: 5px 10px;
+      border-radius: 10px;
+      height: 20vh;
+      outline: none;
+    }
+  
+    .text-d {
+      font-size: 16px;
+      margin: 10px;
+      padding: 5px 10px;
+      border-radius: 10px;
+      height: 20vh;
+      outline: none;
+  
+      color: #fff;
+      background-color: black;
+      border: none;
+    }
+  
+    .c-s-l {
+      font-size: 16px;
+      margin: 10px;
+      padding: 5px 10px;
+      border-radius: 20px;
+      outline: none;
+      background-color: blue;
+      color: #fff;
+      width: 100px;
+      align-self: center;
+  
+      border: none;
+    }
+  
+    .c-p-l {
+      margin-bottom: 10px;
+      font-weight: 400;
+      margin-top: 10px;
+      font-size: 16px;
+      text-wrap: wrap;
+      width: 70%;
+    }
+  
+    .c-p-d {
+      margin-bottom: 10px;
+      font-weight: 400;
+      margin-top: 10px;
+      font-size: 16px;
+      color: #fff;
+      width: 70%;
+    }
 }
