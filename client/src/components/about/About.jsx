@@ -43,7 +43,6 @@ function About() {
             <div className="tech-stack">
               <div className='stacks'>
               <div className='stack-1'>
-                🌐
                   <p>JavaScript</p>
                   <p>TypeScript</p>
                   <p>ReactJs</p>

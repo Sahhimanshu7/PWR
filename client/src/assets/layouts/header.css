@@ -1,11 +1,11 @@
 .header{
   display: flex;
-  margin-left: 30%;
+  margin-left: 35%;
   justify-content: space-between;
 
   position: fixed;
   top: 0px;
-  width: 71%;
+  width: 65%;
   z-index: 5;
 }
 

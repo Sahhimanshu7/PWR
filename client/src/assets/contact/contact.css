@@ -1,0 +1,121 @@
+.dark-light-contact{
+    z-index: 1;
+    width: 100vw;
+    padding-top: 15vh;
+    /* Make it wider than the viewport */
+    height: 100vh;
+    background: radial-gradient(rgba(0, 0, 0, 1) 0%, rgb(35, 30, 30) 100%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.light-effect-contact{
+    z-index: 1;
+    width: 100vw;
+    padding-top: 15vh;
+    /* Make it wider than the viewport */
+    height: 100vh;
+    background: radial-gradient(ellipse at top, rgba(93, 93, 93, 0.5) 0%, rgba(255, 255, 255, 0) 80%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.head{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.c-p-l{
+  font-size: 20px;
+}
+
+.p-dark{
+  font-family: cursive;
+  font-weight: 800;
+  
+  font-size: 36px;
+  color: #fff;
+}
+
+.p-light{
+  font-family: cursive;
+  font-weight: 800;
+
+  font-size: 36px;
+  margin-bottom: 5vh;
+}
+
+.footer {
+  width: 100vw;
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+  color: #fff;
+  font-size: 12px;
+}
+.footer p{
+  opacity: 0.6;
+  align-self: center;
+}
+
+.middle{
+  width: 100vw;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+}
+
+.form-light{
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+}
+
+.name-l{
+  font-size: 20px;
+  margin: 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.email-l{
+  font-size: 20px;
+  margin: 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  outline: none;
+}
+.text-l{
+  font-size: 20px;
+  margin: 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  height: 20vh;
+  outline: none;
+}
+
+.c-s-l{
+  font-size: 20px;
+  margin: 10px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  outline: none;
+  background-color: blue;
+  color: #fff;
+  width: 100px;
+  align-self: center;
+}
