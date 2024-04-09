@@ -25,9 +25,6 @@ function About() {
 
 Driven by an insatiable curiosity for software development, my journey extends far beyond the confines of web development. From delving into the intricacies of Microprocesses to unraveling the mysteries of Artificial Intelligence and Machine Learning, I thrive on the challenge of mastering diverse domains within computer science.
 
-
-Whether it's architecting scalable web applications, fine-tuning algorithms for efficiency, or exploring the frontiers of emerging technologies, I'm always eager to push boundaries and exceed expectations.
-
 Join me on this exhilarating journey through the digital landscape, where innovation meets craftsmanship, and every line of code tells a story of ambition and ingenuity.
 
 Let's build the future together, one keystroke at a time.

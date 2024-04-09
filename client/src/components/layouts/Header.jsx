@@ -3,8 +3,14 @@ import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import { useTheme } from '../../contexts/ThemeContext';
 
+import MenuIcon from '@mui/icons-material/Menu';
 
 import "../../assets/layouts/header.css";
+import CloseIcon from '@mui/icons-material/Close';
+
+function isMobileWidth() {
+    return window.innerWidth < 1100;
+}
 
 function Header() {
   const { currentTheme, setCurrentTheme } = useTheme();
@@ -13,6 +19,8 @@ function Header() {
   const [color, setColor] = useState("black");
 
   const [visible, setVisible] = useState("none");
+
+  const [showMenu, setShowMenu] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -35,6 +43,8 @@ function Header() {
       setColor("black");
     }
   }, [currentTheme]);
+
+  if(!isMobileWidth()) {
 
   return (
     <div className= "header">
@@ -81,6 +91,66 @@ function Header() {
       </div>
     </div>
   );
+  } 
+  return (
+    <div className='mobile-header'>
+      <div className='Navbar'>
+        {showMenu == true ? 
+      <>
+      <button 
+      onClick={() => ( setShowMenu(!showMenu))}
+      >
+      <CloseIcon sx={{fontSize: 30}} />
+      </button>
+      </>
+      :
+      <button
+        onClick={() => setShowMenu(!showMenu)}
+        >
+          <MenuIcon sx={{fontSize: 30}} />
+          
+        </button>
+      }
+        
+
+      </div>
+      {showMenu && (
+        <div className='nav'>
+          <a href='#home'
+          onClick={() => setShowMenu(false)}
+          >Home</a>
+          <a href='#about'
+          onClick={() => setShowMenu(false)}
+          >About</a>
+          <a href='#work'
+          onClick={() => setShowMenu(false)}
+          >Work</a>
+          <a href='#contact'
+          onClick={() => setShowMenu(false)}
+          >Contact</a>
+        </div>
+      )}
+      <div className='theme'>
+        <button 
+          className='theme-selector'
+          style={{ backgroundColor: backgroundcolor }}
+          onClick={(e) => {
+            if(currentTheme === "Light"){
+              setCurrentTheme("Dark");
+            } else {
+              setCurrentTheme("Light")
+            }  
+          }}
+        >
+          {currentTheme === "Dark" ? 
+        <LightModeIcon style={{ color: 'white'}}/>
+        :
+        <DarkModeIcon />  
+        }
+        </button>
+      </div>
+    </div>
+  )
 }
 
 export default Header
