@@ -99,6 +99,7 @@ function Header() {
       <>
       <button 
       onClick={() => ( setShowMenu(!showMenu))}
+      style={{ backgroundColor: backgroundcolor }}
       >
       <CloseIcon sx={{fontSize: 30}} />
       </button>
@@ -106,6 +107,7 @@ function Header() {
       :
       <button
         onClick={() => setShowMenu(!showMenu)}
+        style={{ backgroundColor: backgroundcolor }}
         >
           <MenuIcon sx={{fontSize: 30}} />
           

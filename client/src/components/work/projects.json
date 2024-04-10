@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "name": "chatApp",
+    "link": "https://github.com/Sahhimanshu7/chatApp",
+    "otherLink": "https://www.chatusa.online",
+    "description": "chatApp, a MERN application, developed with the purpose to be able to talk to my friends and realtives without any organization using that conversation to show up ad on my feed.",
+    "tech-stack": [
+      "MongoDB",
+      "React",
+      "Node",
+      "Express"
+    ],
+    "photoURL":"../Images/chatApp.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "E-Commerce",
+    "link": "https://github.com/Sahhimanshu7/E-commerce",
+    "description": "E-Commerce is, as the name suggests, an e-commerce progressive web app that lets users buy and sell products. The site includes a content management system(CMS) page for all users.",
+    "tech-stack": [
+      "MongoDB",
+      "React",
+      "Node",
+      "Express"
+    ],
+    "photoURL":"../Images/e-commerce.jpg"
+  },
+  {
+    "id": 3,
+    "name": "linkedIn-clone",
+    "link": "https://github.com/Sahhimanshu7/chatApp",
+    "otherLink": "https://www.chatusa.online",
+    "description": "chatApp, a MERN application, developed with the purpose to be able to talk to my friends and realtives without any organization using that conversation to show up ad on my feed.",
+    "tech-stack": [
+      "MongoDB",
+      "React",
+      "Node",
+      "Express"
+    ],
+    "photoURL":"../Images/linkedin.jpeg"
+  }
+]

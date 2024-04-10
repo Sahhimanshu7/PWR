@@ -5,6 +5,7 @@ import { ThemeProvider } from "./contexts/ThemeContext.jsx";
 import Main from "./components/home/Main.jsx";
 import About from "./components/about/About.jsx";
 import Contact from "./components/contact/Contact.jsx";
+import Work from "./components/work/Work.jsx";
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <Header/>
             <Main/>
             <About/>
+            <Work />
             <Contact/>
         </ThemeProvider>
     );

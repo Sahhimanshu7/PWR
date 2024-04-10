@@ -1,18 +1,38 @@
 // Make sure to run npm install @formspree/react
 // For more help visit https://formspr.ee/react-help
-import React from 'react';
-import { useForm, ValidationError } from '@formspree/react';
+import React, { useRef } from 'react';
 import Social from '../home/Social';
 
 import { useEffect, useState } from 'react';
 import { useTheme } from "../../contexts/ThemeContext";
 import "../../assets/contact/contact.css";
+import emailjs from '@emailjs/browser';
+
 
 function ContactForm() {
   const { currentTheme } = useTheme();
-  const [state, handleSubmit] = useForm("mzbnkryv");
-  if (state.succeeded) {
-      return <p>Thanks for joining!</p>;
+
+  const form = useRef();
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [submit, setSubmit] = useState(true);
+  
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const values = {
+      name,
+      email,
+      message
+    }
+    await emailjs.send("service_iwwhfge", "template_x4xqbbr", values, "meBzmwcUpJg2Grjmx")
+    .then(() => {
+      setSubmit(true);
+      setEmail("");
+      setName("");
+      setMessage("");
+  }).catch((e) => console.log(e))
   }
 
   const [nameL, setNameL] = useState('name-l');
@@ -32,13 +52,14 @@ function ContactForm() {
     }, [currentTheme])
 
   return (
-      <form onSubmit={handleSubmit} className='form-light'>
+      <form ref={form} onSubmit={handleSubmit} className='form-light'>
         <input 
         id='name'
         type='text'
         name='name'
         placeholder='Your Name'
         className={nameL}
+        onChange={(e) => setName(e.target.value)}
         />
       <input
         id="email"
@@ -46,24 +67,16 @@ function ContactForm() {
         name="email"
         placeholder='Your Email'
         className={emailL}
-      />
-      <ValidationError 
-        prefix="Email" 
-        field="email"
-        errors={state.errors}
+        onChange={(e) => setEmail(e.target.value)}
       />
       <textarea
         id="message"
         name="message"
         className={textL}
         placeholder='Your Message...'
+        onChange={(e) => setMessage(e.target.value)}
       />
-      <ValidationError 
-        prefix="Message" 
-        field="message"
-        errors={state.errors}
-      />
-      <button type="submit" disabled={state.submitting} className='c-s-l'>
+      <button type="submit" disabled={submit} className='c-s-l'>
         Send
       </button>
     </form>
